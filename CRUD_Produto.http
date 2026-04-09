@@ -1,0 +1,16 @@
+@baseurl = http://localhost:5000
+
+###CRIAR NOVO PRODUTO
+POST {{baseurl}}/produtos
+Content-Type: application/json
+
+{
+"Nome": "Celular",
+"Preco": 4000
+}
+
+###LISTAR PRODUTO
+GET {{baseurl}}/produtos
+
+###DELETAR PRODUTO
+DELETE {{baseurl}}/produtos/4
